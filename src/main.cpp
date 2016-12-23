@@ -11,7 +11,7 @@
 
 TimeLog timeLog;
 
-int main() {;
+int main() {
     int timeLogIdx = timeLog.newTimeLog("main");
 
 //    for (int run = 0; run < 20; run++) {
