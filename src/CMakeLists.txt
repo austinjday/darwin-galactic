@@ -1,0 +1,5 @@
+file(GLOB_RECURSE CORE_SOURCE_FILES *.cpp *.h)
+list(REMOVE_ITEM CORE_SOURCE_FILES "main.cpp")
+add_library(core ${CORE_SOURCE_FILES})
+add_executable(DarwinGalactic main.cpp)
+target_link_libraries(DarwinGalactic core)
