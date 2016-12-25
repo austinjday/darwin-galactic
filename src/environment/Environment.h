@@ -14,14 +14,8 @@
 #include "LaserShot.h"
 #include "../ship/Ship.h"
 
-#include "../logging/TimeLog.h"
-
-extern TimeLog timeLog;
-
 class Environment {
 private:
-
-    int timeLogIdx;
 
     /**
      * All asteroids in the environment.

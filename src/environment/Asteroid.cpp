@@ -5,7 +5,6 @@
 #include "Asteroid.h"
 #include "../utility/IntegerMath.h"
 #include "../common/Constants.h"
-#include "../logging/TimeLog.h"
 
 #include <cmath>
 #include <random>

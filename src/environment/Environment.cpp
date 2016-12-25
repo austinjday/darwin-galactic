@@ -14,15 +14,11 @@
 int Environment::randomRadius(int min, int max) {
     assert (min <= max);
     std::binomial_distribution<int> distribution(max - min + 1, 0.5);
-    //std::uniform_int_distribution<> distribution(min, max);
     return distribution(generator) + min;
 }
 
 int Environment::randomClearance() {
     int result = clearanceDistribution(generator);
-    //clearanceDistribution.reset();
-    //std::uniform_int_distribution<> distribution(MIN_ASTEROID_CLEARANCE, AVERAGE_ASTEROID_CLEARANCE * 2);
-    //return distribution(generator);
     return result;
 }
 
@@ -36,12 +32,6 @@ void Environment::generateAsteroidInRange(Point begin, Point end, int interval) 
     // create a list of randomly generated potential asteroid spacial profiles (at most one spacial profile per point in
     // range)
     std::vector<std::pair<Point, int>> asteroidSpacialProfiles;
-//    if (end.x - begin.x == 0) {
-//        asteroidSpacialProfiles.reserve((unsigned) (end.y - begin.y) / 10 + 1);
-//    }
-//    else {
-//        asteroidSpacialProfiles.reserve((unsigned) (end.x - begin.x) / 10 + 1);
-//    }
     int offset = randomInRange(interval);
     if (begin.x == end.x) {
         begin.y += offset;
@@ -50,9 +40,7 @@ void Environment::generateAsteroidInRange(Point begin, Point end, int interval) 
         begin.x += offset;
     }
     for (Point point = begin; point.x <= end.x && point.y <= end.y; begin.x == end.x ? point.y += interval : point.x += interval) {
-        timeLog.tick(timeLogIdx);
         int distanceToNearestAsteroid = getDistanceToNearestAsteroid(point);
-        timeLog.tock(timeLogIdx);
 
         if (MIN_ASTEROID_RADIUS + MIN_ASTEROID_CLEARANCE < distanceToNearestAsteroid) {
             // find the maximum allowable radius for this point.
@@ -73,16 +61,12 @@ void Environment::generateAsteroidInRange(Point begin, Point end, int interval) 
             }
         }
     }
-    //std::cout << std::endl << std::endl << std::endl;
-    //std::cout << "Asteroid Spacial Profiles in pool: " << asteroidSpacialProfiles.size();
 
     // pick a spacial profile to create
     if (!asteroidSpacialProfiles.empty()) {
         int idx = randomInRange(asteroidSpacialProfiles.size());
         asteroids.insert(std::make_shared<Asteroid>(asteroidSpacialProfiles[idx], BASE_ASTEROID_SPEED));
-        //std::cout << " -- " << asteroidSpacialProfiles[idx].second << std::endl;
     }
-    //std::cout << std::endl;
 }
 
 void Environment::generateAsteroidOnXAxis(int y, int interval) {
@@ -144,7 +128,6 @@ void Environment::handleShipAsteroidContact() {
  * @return newly constructed environment object.
  */
 Environment::Environment(int height, int width) {
-    timeLogIdx = timeLog.newTimeLog("nearest asteroid");
     this->length = height;
     this->width = width;
     clearanceDistribution = std::binomial_distribution<int>(AVERAGE_ASTEROID_CLEARANCE * 2, 0.5);
@@ -172,18 +155,12 @@ Environment::~Environment() {}
  *
  */
 void Environment::tick() {
+    assert (ship != NULL);
     generateAsteroidOnXAxis(length * 2 + MAX_ASTEROID_RADIUS, length / 35);
     updateLaserShots();
     updateAsteroids();
-//    if (rand() % 10 == 5) {
-//        std::cout << "num asteroids: " << asteroids.size() << std::endl;
-//    }
-//    assert(ship != NULL);
-//    ship->tickMotion();
-    if (ship != NULL) {
-        ship->tickMotion();
-        handleShipAsteroidContact();
-    }
+    ship->tickMotion();
+    handleShipAsteroidContact();
 }
 
 int Environment::getDistanceToNearestAsteroid(Point point) const {
