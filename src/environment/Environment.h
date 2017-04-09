@@ -28,9 +28,14 @@ private:
     std::unordered_set<std::unique_ptr<LaserShot>> laserShots;
 
     /**
-     * Binomial distribution for clearances.
+     * Normal distribution for clearances.
      */
-    std::binomial_distribution<int> clearanceDistribution;
+    std::normal_distribution<double> clearanceDistribution;
+
+    /**
+     * Normal distribution for radii.
+     */
+     std::normal_distribution<double> radiusDistribution;
 
     //std::random_device randomDevice;
     std::mt19937 generator;
@@ -42,12 +47,10 @@ private:
     Ship* ship = NULL;
 
     /**
-     * Get a random radius in the range.
-     * @param min inclusive.
-     * @param max inclusive.
+     * Get a random radius based on the radius distribution set up in the constructor.
      * @return random radius.
      */
-    int randomRadius(int min, int max);
+    int randomRadius();
 
     /**
      * Get a random clearance based on the clearance distribution set up in the constructor.
@@ -63,10 +66,11 @@ private:
     int randomInRange(int elements);
 
     /**
-     * Generate
-     * @param begin
-     * @param end
-     * @param interval
+     * This may or may not generate a new asteroid on the specified hyperplane. A list (possibly empty) of candidate
+     * asteroids is generated, from which, if not empty, an asteroid is selected and created.
+     * @param begin - lower bound on hyperplane
+     * @param end - upper bound on hyperplane
+     * @param interval - interval on which to try points as potential asteroid centers
      */
     void generateAsteroidInRange(Point begin, Point end, int interval);
     void generateAsteroidOnXAxis(int y, int interval);

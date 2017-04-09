@@ -35,9 +35,11 @@ static const int MIN_ASTEROID_DENSITY = 5;
 static const int MAX_ASTEROID_DENSITY = 100;
 static const int MIN_ASTEROID_RADIUS = 2;
 static const int MAX_ASTEROID_RADIUS = 100;
-static const int ASTEROID_RADIUS_RANGE = MAX_ASTEROID_RADIUS - MIN_ASTEROID_RADIUS;
+static const int MEAN_ASTEROID_RADIUS = 44;
+static const int ASTEROID_RADIUS_STD_DEV = 14;
 static const int MIN_ASTEROID_CLEARANCE = 15;
-static const int AVERAGE_ASTEROID_CLEARANCE = 300;
+static const int MEAN_ASTEROID_CLEARANCE = 300;
+static const int ASTEROID_CLEARANCE_STD_DEV = 70;
 
 // ship constraints
 static const int MIN_BODY_WIDTH = 10;

@@ -11,15 +11,14 @@
 #include "../common/Constants.h"
 #include "../utility/IntegerMath.h"
 
-int Environment::randomRadius(int min, int max) {
-    assert (min <= max);
-    std::binomial_distribution<int> distribution(max - min + 1, 0.5);
-    return distribution(generator) + min;
+int Environment::randomRadius() {
+    double result = radiusDistribution(generator);
+    return (int) std::floor(result);
 }
 
 int Environment::randomClearance() {
-    int result = clearanceDistribution(generator);
-    return result;
+    double result = clearanceDistribution(generator);
+    return (int) std::floor(result);
 }
 
 int Environment::randomInRange(int elements) {
@@ -33,29 +32,41 @@ void Environment::generateAsteroidInRange(Point begin, Point end, int interval) 
     // range)
     std::vector<std::pair<Point, int>> asteroidSpacialProfiles;
     int offset = randomInRange(interval);
-    if (begin.x == end.x) {
-        begin.y += offset;
-    }
-    else {
-        begin.x += offset;
-    }
+
+    // give the interval an offset
+    begin.x == end.x ? begin.y += offset : begin.x += offset;
+
+    /*
+     * This for-loop works for both vertical and horizontal ranges. With equal x-values for begin and end, will iterate
+     * over y-range. With equal y-values, will iterate over x-range.
+     */
     for (Point point = begin; point.x <= end.x && point.y <= end.y; begin.x == end.x ? point.y += interval : point.x += interval) {
         int distanceToNearestAsteroid = getDistanceToNearestAsteroid(point);
 
+        // only consider this point if it is possible for the smallest allowable asteroid to fit there
         if (MIN_ASTEROID_RADIUS + MIN_ASTEROID_CLEARANCE < distanceToNearestAsteroid) {
-            // find the maximum allowable radius for this point.
-            int max = MIN_ASTEROID_RADIUS;
-            for (; max < MAX_ASTEROID_RADIUS && max + MIN_ASTEROID_CLEARANCE < distanceToNearestAsteroid; max++);
 
-            // get a random radius and clearance distribution.
-            int radius = randomRadius(MIN_ASTEROID_RADIUS, max);
+            // maximum allowable radius for this point
+            int maxAllowableRadius = distanceToNearestAsteroid - MIN_ASTEROID_CLEARANCE;
+
+            // get a random radius and its clearance
+            int radius = randomRadius();
+            int clearance = distanceToNearestAsteroid - radius;
+
+            // get the minimum allowable clearance
             int acceptableClearance = randomClearance();
+            if (acceptableClearance < MIN_ASTEROID_CLEARANCE) {
+                acceptableClearance = MEAN_ASTEROID_CLEARANCE;
+            }
 
-            // Only continue with this radius if it has a clearance greater than or equal to the chosen acceptable
-            // clearance cut-off.
-            if (distanceToNearestAsteroid - radius >= acceptableClearance) {
+            /*
+             * Create an asteroid spacial profile if both the following hold:
+             * radius is within bounds
+             * clearance is not less than the minimum allowable
+             */
+            if (radius >= MIN_ASTEROID_RADIUS && radius <= maxAllowableRadius && clearance >= acceptableClearance) {
                 if (rand() % 30 == 17) {
-                    std::cout << distanceToNearestAsteroid - radius << std::endl;
+                    std::cout << clearance << std::endl;
                 }
                 asteroidSpacialProfiles.push_back(std::make_pair(point, radius));
             }
@@ -130,7 +141,8 @@ void Environment::handleShipAsteroidContact() {
 Environment::Environment(int height, int width) {
     this->length = height;
     this->width = width;
-    clearanceDistribution = std::binomial_distribution<int>(AVERAGE_ASTEROID_CLEARANCE * 2, 0.5);
+    clearanceDistribution = std::normal_distribution<double> ((double) MEAN_ASTEROID_CLEARANCE, (double) ASTEROID_CLEARANCE_STD_DEV);
+    radiusDistribution = std::normal_distribution<double> ((double) MEAN_ASTEROID_RADIUS, (double) ASTEROID_RADIUS_STD_DEV);
     srand((unsigned) time(NULL));
     generator = std::mt19937((unsigned) rand());
 }
