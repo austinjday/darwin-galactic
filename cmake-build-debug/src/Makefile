@@ -210,6 +210,36 @@ environment/Asteroid.cpp.s:
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/environment/Asteroid.cpp.s
 .PHONY : environment/Asteroid.cpp.s
 
+environment/AsteroidManager.obj: environment/AsteroidManager.cpp.obj
+
+.PHONY : environment/AsteroidManager.obj
+
+# target to build an object file
+environment/AsteroidManager.cpp.obj:
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\DarwinGalactic.dir\build.make src/CMakeFiles/DarwinGalactic.dir/environment/AsteroidManager.cpp.obj
+.PHONY : environment/AsteroidManager.cpp.obj
+
+environment/AsteroidManager.i: environment/AsteroidManager.cpp.i
+
+.PHONY : environment/AsteroidManager.i
+
+# target to preprocess a source file
+environment/AsteroidManager.cpp.i:
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.i
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\DarwinGalactic.dir\build.make src/CMakeFiles/DarwinGalactic.dir/environment/AsteroidManager.cpp.i
+.PHONY : environment/AsteroidManager.cpp.i
+
+environment/AsteroidManager.s: environment/AsteroidManager.cpp.s
+
+.PHONY : environment/AsteroidManager.s
+
+# target to generate assembly for a file
+environment/AsteroidManager.cpp.s:
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.s
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug && $(MAKE) -f src\CMakeFiles\DarwinGalactic.dir\build.make src/CMakeFiles/DarwinGalactic.dir/environment/AsteroidManager.cpp.s
+.PHONY : environment/AsteroidManager.cpp.s
+
 environment/Environment.obj: environment/Environment.cpp.obj
 
 .PHONY : environment/Environment.obj
@@ -419,6 +449,9 @@ help:
 	@echo ... environment/Asteroid.obj
 	@echo ... environment/Asteroid.i
 	@echo ... environment/Asteroid.s
+	@echo ... environment/AsteroidManager.obj
+	@echo ... environment/AsteroidManager.i
+	@echo ... environment/AsteroidManager.s
 	@echo ... environment/Environment.obj
 	@echo ... environment/Environment.i
 	@echo ... environment/Environment.s

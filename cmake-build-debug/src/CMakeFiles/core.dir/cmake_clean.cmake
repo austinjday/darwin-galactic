@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/core.dir/environment/Asteroid.cpp.obj"
+  "CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj"
   "CMakeFiles/core.dir/environment/Environment.cpp.obj"
   "CMakeFiles/core.dir/environment/LaserShot.cpp.obj"
   "CMakeFiles/core.dir/main.cpp.obj"

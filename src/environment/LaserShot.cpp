@@ -26,7 +26,7 @@ void LaserShot::updateActive() {
 }
 
 bool LaserShot::impactOnNextTick() const{
-    if (target == NULL) {
+    if (target.use_count() == 0) {
         return false;
     }
     return getUpperBound() + LASER_SHOT_SPEED > target->getLowerBound() - target->getSpeed();
@@ -63,7 +63,9 @@ bool LaserShot::isInBounds() const{
 }
 
 bool LaserShot::targetIsValid() const {
-    if (target == NULL) {
+    // if this is the only reference to this asteroid, then it is no longer active and obviously if there's no managed
+    // asteroid, the target is not valid
+    if (target.use_count() < 2) {
         return false;
     }
     return target->isValid();
@@ -85,12 +87,12 @@ int LaserShot::getY() const{
     return position.y;
 }
 
-void LaserShot::setTarget(Asteroid* asteroid) {
-    target.reset(asteroid);
+void LaserShot::setTarget(std::shared_ptr<Asteroid> asteroid) {
+    target = asteroid;
 }
 
-Asteroid* LaserShot::getTarget() const{
-    return target.get();
+std::shared_ptr<Asteroid> LaserShot::getTarget() const {
+    return target;
 }
 
 int LaserShot::getLeftBound() const{

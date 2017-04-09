@@ -36,6 +36,26 @@ unordered_map
 ../common/Point.h
 C:/Users/austi/dev/DarwinGalactic/src/common/Point.h
 
+C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.cpp
+cassert
+-
+AsteroidManager.h
+C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h
+
+C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h
+set
+-
+random
+-
+memory
+-
+ctime
+-
+Asteroid.h
+C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.h
+../common/Constants.h
+C:/Users/austi/dev/DarwinGalactic/src/common/Constants.h
+
 C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.cpp
 cstddef
 -
@@ -44,8 +64,6 @@ cassert
 vector
 -
 iostream
--
-ctime
 -
 Environment.h
 C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.h
@@ -69,6 +87,8 @@ LaserShot.h
 C:/Users/austi/dev/DarwinGalactic/src/environment/LaserShot.h
 ../ship/Ship.h
 C:/Users/austi/dev/DarwinGalactic/src/ship/Ship.h
+AsteroidManager.h
+C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h
 
 C:/Users/austi/dev/DarwinGalactic/src/environment/LaserShot.cpp
 cstddef

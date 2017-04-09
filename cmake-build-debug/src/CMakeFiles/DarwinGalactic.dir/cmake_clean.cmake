@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DarwinGalactic.dir/main.cpp.obj"
+  "CMakeFiles/DarwinGalactic.dir/environment/AsteroidManager.cpp.obj"
   "DarwinGalactic.pdb"
   "DarwinGalactic.exe"
   "DarwinGalactic.exe.manifest"

@@ -7,10 +7,17 @@ src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj
  C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.cpp
  C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.h
  C:/Users/austi/dev/DarwinGalactic/src/utility/IntegerMath.h
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj
+ C:/Users/austi/dev/DarwinGalactic/src/common/Constants.h
+ C:/Users/austi/dev/DarwinGalactic/src/common/Point.h
+ C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.h
+ C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.cpp
+ C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj
  C:/Users/austi/dev/DarwinGalactic/src/common/Constants.h
  C:/Users/austi/dev/DarwinGalactic/src/common/Point.h
  C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.h
+ C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h
  C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.cpp
  C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.h
  C:/Users/austi/dev/DarwinGalactic/src/environment/LaserShot.h
@@ -28,6 +35,7 @@ src/CMakeFiles/core.dir/main.cpp.obj
  C:/Users/austi/dev/DarwinGalactic/src/common/Constants.h
  C:/Users/austi/dev/DarwinGalactic/src/common/Point.h
  C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.h
+ C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h
  C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.h
  C:/Users/austi/dev/DarwinGalactic/src/environment/LaserShot.h
  C:/Users/austi/dev/DarwinGalactic/src/main.cpp

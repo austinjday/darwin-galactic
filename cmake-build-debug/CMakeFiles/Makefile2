@@ -85,7 +85,7 @@ src/preinstall:
 src/CMakeFiles/core.dir/all:
 	$(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/depend
 	$(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13 "Built target core"
 .PHONY : src/CMakeFiles/core.dir/all
 
 # Include target in all.
@@ -95,7 +95,7 @@ all: src/CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 10
 	$(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 0
 .PHONY : src/CMakeFiles/core.dir/rule
@@ -122,7 +122,7 @@ clean: src/CMakeFiles/core.dir/clean
 src/CMakeFiles/DarwinGalactic.dir/all: src/CMakeFiles/core.dir/all
 	$(MAKE) -f src\CMakeFiles\DarwinGalactic.dir\build.make src/CMakeFiles/DarwinGalactic.dir/depend
 	$(MAKE) -f src\CMakeFiles\DarwinGalactic.dir\build.make src/CMakeFiles/DarwinGalactic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target DarwinGalactic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target DarwinGalactic"
 .PHONY : src/CMakeFiles/DarwinGalactic.dir/all
 
 # Include target in all.
@@ -132,7 +132,7 @@ all: src/CMakeFiles/DarwinGalactic.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/DarwinGalactic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 13
 	$(MAKE) -f CMakeFiles\Makefile2 src/CMakeFiles/DarwinGalactic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 0
 .PHONY : src/CMakeFiles/DarwinGalactic.dir/rule
@@ -176,12 +176,12 @@ test/preinstall: test/lib/googletest-master/preinstall
 # Target rules for target test/CMakeFiles/runUnitTests.dir
 
 # All Build rule for target.
-test/CMakeFiles/runUnitTests.dir/all: src/CMakeFiles/core.dir/all
 test/CMakeFiles/runUnitTests.dir/all: test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/runUnitTests.dir/all: test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/runUnitTests.dir/all: src/CMakeFiles/core.dir/all
 	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/depend
 	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=23,24,25,26,27,28,29,30,31 "Built target runUnitTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=25,26,27,28,29,30,31,32,33 "Built target runUnitTests"
 .PHONY : test/CMakeFiles/runUnitTests.dir/all
 
 # Include target in all.
@@ -191,7 +191,7 @@ all: test/CMakeFiles/runUnitTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 22
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 23
 	$(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/runUnitTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles 0
 .PHONY : test/CMakeFiles/runUnitTests.dir/rule
@@ -258,7 +258,7 @@ test/lib/googletest-master/googlemock/preinstall: test/lib/googletest-master/goo
 test/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f test\lib\googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make test/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f test\lib\googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make test/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=15,16,17,18 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=17,18,19,20 "Built target gmock_main"
 .PHONY : test/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -295,7 +295,7 @@ clean: test/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/clean
 test/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f test\lib\googletest-master\googlemock\CMakeFiles\gmock.dir\build.make test/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f test\lib\googletest-master\googlemock\CMakeFiles\gmock.dir\build.make test/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=12,13,14 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=14,15,16 "Built target gmock"
 .PHONY : test/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -352,7 +352,7 @@ test/lib/googletest-master/googlemock/gtest/preinstall:
 test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f test\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\build.make test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f test\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\build.make test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=19,20 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target gtest"
 .PHONY : test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.
@@ -389,7 +389,7 @@ clean: test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/clean
 test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all: test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f test\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f test\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest_main.dir\build.make test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=21,22 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=23,24 "Built target gtest_main"
 .PHONY : test/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.

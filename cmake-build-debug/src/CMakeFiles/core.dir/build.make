@@ -80,9 +80,33 @@ src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj.provides: src/CMakeFiles/co
 src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj.provides.build: src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj
 
 
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: src/CMakeFiles/core.dir/flags.make
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: ../src/environment/AsteroidManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj"
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\environment\AsteroidManager.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\environment\AsteroidManager.cpp
+
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/core.dir/environment/AsteroidManager.cpp.i"
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\austi\dev\DarwinGalactic\src\environment\AsteroidManager.cpp > CMakeFiles\core.dir\environment\AsteroidManager.cpp.i
+
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/core.dir/environment/AsteroidManager.cpp.s"
+	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\austi\dev\DarwinGalactic\src\environment\AsteroidManager.cpp -o CMakeFiles\core.dir\environment\AsteroidManager.cpp.s
+
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.requires:
+
+.PHONY : src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.requires
+
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.provides: src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.requires
+	$(MAKE) -f src\CMakeFiles\core.dir\build.make src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.provides.build
+.PHONY : src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.provides
+
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.provides.build: src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj
+
+
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/environment/Environment.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/core.dir/environment/Environment.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/core.dir/environment/Environment.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\environment\Environment.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\environment\Environment.cpp
 
 src/CMakeFiles/core.dir/environment/Environment.cpp.i: cmake_force
@@ -106,7 +130,7 @@ src/CMakeFiles/core.dir/environment/Environment.cpp.obj.provides.build: src/CMak
 
 src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj: ../src/environment/LaserShot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\environment\LaserShot.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\environment\LaserShot.cpp
 
 src/CMakeFiles/core.dir/environment/LaserShot.cpp.i: cmake_force
@@ -130,7 +154,7 @@ src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj.provides.build: src/CMakeF
 
 src/CMakeFiles/core.dir/main.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/core.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/core.dir/main.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\main.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\main.cpp
 
 src/CMakeFiles/core.dir/main.cpp.i: cmake_force
@@ -154,7 +178,7 @@ src/CMakeFiles/core.dir/main.cpp.obj.provides.build: src/CMakeFiles/core.dir/mai
 
 src/CMakeFiles/core.dir/ship/Ship.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/ship/Ship.cpp.obj: ../src/ship/Ship.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/core.dir/ship/Ship.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/core.dir/ship/Ship.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\ship\Ship.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\ship\Ship.cpp
 
 src/CMakeFiles/core.dir/ship/Ship.cpp.i: cmake_force
@@ -178,7 +202,7 @@ src/CMakeFiles/core.dir/ship/Ship.cpp.obj.provides.build: src/CMakeFiles/core.di
 
 src/CMakeFiles/core.dir/ship/equipment/Laser.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/ship/equipment/Laser.cpp.obj: ../src/ship/equipment/Laser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/core.dir/ship/equipment/Laser.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/core.dir/ship/equipment/Laser.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\ship\equipment\Laser.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\ship\equipment\Laser.cpp
 
 src/CMakeFiles/core.dir/ship/equipment/Laser.cpp.i: cmake_force
@@ -202,7 +226,7 @@ src/CMakeFiles/core.dir/ship/equipment/Laser.cpp.obj.provides.build: src/CMakeFi
 
 src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.obj: ../src/ship/equipment/Thruster.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\ship\equipment\Thruster.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\ship\equipment\Thruster.cpp
 
 src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.i: cmake_force
@@ -226,7 +250,7 @@ src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.obj.provides.build: src/CMak
 
 src/CMakeFiles/core.dir/utility/IntegerMath.cpp.obj: src/CMakeFiles/core.dir/flags.make
 src/CMakeFiles/core.dir/utility/IntegerMath.cpp.obj: ../src/utility/IntegerMath.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/core.dir/utility/IntegerMath.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/core.dir/utility/IntegerMath.cpp.obj"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && C:\MinGW\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\core.dir\utility\IntegerMath.cpp.obj -c C:\Users\austi\dev\DarwinGalactic\src\utility\IntegerMath.cpp
 
 src/CMakeFiles/core.dir/utility/IntegerMath.cpp.i: cmake_force
@@ -251,6 +275,7 @@ src/CMakeFiles/core.dir/utility/IntegerMath.cpp.obj.provides.build: src/CMakeFil
 # Object files for target core
 core_OBJECTS = \
 "CMakeFiles/core.dir/environment/Asteroid.cpp.obj" \
+"CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj" \
 "CMakeFiles/core.dir/environment/Environment.cpp.obj" \
 "CMakeFiles/core.dir/environment/LaserShot.cpp.obj" \
 "CMakeFiles/core.dir/main.cpp.obj" \
@@ -263,6 +288,7 @@ core_OBJECTS = \
 core_EXTERNAL_OBJECTS =
 
 src/libcore.a: src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj
+src/libcore.a: src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj
 src/libcore.a: src/CMakeFiles/core.dir/environment/Environment.cpp.obj
 src/libcore.a: src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj
 src/libcore.a: src/CMakeFiles/core.dir/main.cpp.obj
@@ -272,7 +298,7 @@ src/libcore.a: src/CMakeFiles/core.dir/ship/equipment/Thruster.cpp.obj
 src/libcore.a: src/CMakeFiles/core.dir/utility/IntegerMath.cpp.obj
 src/libcore.a: src/CMakeFiles/core.dir/build.make
 src/libcore.a: src/CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libcore.a"
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && $(CMAKE_COMMAND) -P CMakeFiles\core.dir\cmake_clean_target.cmake
 	cd /d C:\Users\austi\dev\DarwinGalactic\cmake-build-debug\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\core.dir\link.txt --verbose=$(VERBOSE)
 
@@ -282,6 +308,7 @@ src/CMakeFiles/core.dir/build: src/libcore.a
 .PHONY : src/CMakeFiles/core.dir/build
 
 src/CMakeFiles/core.dir/requires: src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj.requires
+src/CMakeFiles/core.dir/requires: src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj.requires
 src/CMakeFiles/core.dir/requires: src/CMakeFiles/core.dir/environment/Environment.cpp.obj.requires
 src/CMakeFiles/core.dir/requires: src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj.requires
 src/CMakeFiles/core.dir/requires: src/CMakeFiles/core.dir/main.cpp.obj.requires

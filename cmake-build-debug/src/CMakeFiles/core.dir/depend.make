@@ -7,9 +7,16 @@ src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj: ../src/environment/Asteroi
 src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj: ../src/environment/Asteroid.h
 src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj: ../src/utility/IntegerMath.h
 
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: ../src/common/Constants.h
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: ../src/common/Point.h
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: ../src/environment/Asteroid.h
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: ../src/environment/AsteroidManager.cpp
+src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj: ../src/environment/AsteroidManager.h
+
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/common/Constants.h
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/common/Point.h
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/environment/Asteroid.h
+src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/environment/AsteroidManager.h
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/environment/Environment.cpp
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/environment/Environment.h
 src/CMakeFiles/core.dir/environment/Environment.cpp.obj: ../src/environment/LaserShot.h
@@ -27,6 +34,7 @@ src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj: ../src/environment/LaserS
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/common/Constants.h
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/common/Point.h
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/environment/Asteroid.h
+src/CMakeFiles/core.dir/main.cpp.obj: ../src/environment/AsteroidManager.h
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/environment/Environment.h
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/environment/LaserShot.h
 src/CMakeFiles/core.dir/main.cpp.obj: ../src/main.cpp

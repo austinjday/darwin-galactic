@@ -1,5 +1,5 @@
 file(GLOB_RECURSE CORE_SOURCE_FILES *.cpp *.h)
 list(REMOVE_ITEM CORE_SOURCE_FILES "main.cpp")
-add_library(core ${CORE_SOURCE_FILES})
-add_executable(DarwinGalactic main.cpp)
+add_library(core ${CORE_SOURCE_FILES} environment/AsteroidManager.cpp environment/AsteroidManager.h)
+add_executable(DarwinGalactic main.cpp environment/AsteroidManager.cpp environment/AsteroidManager.h)
 target_link_libraries(DarwinGalactic core)

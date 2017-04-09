@@ -426,6 +426,14 @@
 		<Unit filename="C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.h">
 			<Option target="core"/>
 		</Unit>
+		<Unit filename="C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.cpp">
+			<Option target="core"/>
+			<Option target="DarwinGalactic"/>
+		</Unit>
+		<Unit filename="C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.h">
+			<Option target="core"/>
+			<Option target="DarwinGalactic"/>
+		</Unit>
 		<Unit filename="C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.cpp">
 			<Option target="core"/>
 		</Unit>

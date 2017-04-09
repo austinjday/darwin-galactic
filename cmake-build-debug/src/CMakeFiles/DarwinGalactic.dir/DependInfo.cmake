@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/DarwinGalactic.dir/environment/AsteroidManager.cpp.obj"
   "C:/Users/austi/dev/DarwinGalactic/src/main.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/DarwinGalactic.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

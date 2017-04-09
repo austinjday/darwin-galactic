@@ -40,8 +40,8 @@ public:
     int getX() const;
     int getY() const;
 
-    void setTarget(Asteroid*);
-    Asteroid* getTarget() const;
+    void setTarget(std::shared_ptr<Asteroid>);
+    std::shared_ptr<Asteroid> getTarget() const;
 
     /**
      * Inclusive.

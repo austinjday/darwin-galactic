@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/austi/dev/DarwinGalactic/src/environment/Asteroid.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/core.dir/environment/Asteroid.cpp.obj"
+  "C:/Users/austi/dev/DarwinGalactic/src/environment/AsteroidManager.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/core.dir/environment/AsteroidManager.cpp.obj"
   "C:/Users/austi/dev/DarwinGalactic/src/environment/Environment.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/core.dir/environment/Environment.cpp.obj"
   "C:/Users/austi/dev/DarwinGalactic/src/environment/LaserShot.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/core.dir/environment/LaserShot.cpp.obj"
   "C:/Users/austi/dev/DarwinGalactic/src/main.cpp" "C:/Users/austi/dev/DarwinGalactic/cmake-build-debug/src/CMakeFiles/core.dir/main.cpp.obj"
