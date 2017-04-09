@@ -51,7 +51,6 @@ private:
 
 public:
     Environment(int height, int width);
-    ~Environment();
 
     void setShip(Ship*);
 

@@ -67,11 +67,6 @@ Environment::Environment(int height, int width) {
 }
 
 /**
- * Destroy.
- */
-Environment::~Environment() {}
-
-/**
  * Do a tick for this environment.
  *
  * Generate new asteroid(s).
