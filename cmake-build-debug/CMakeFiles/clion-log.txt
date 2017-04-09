@@ -1,5 +1,0 @@
-"C:\Program Files (x86)\JetBrains\CLion 2017.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\austi\dev\DarwinGalactic
--- C:/Users/austi/dev/DarwinGalactic/test/tests/common/PointTest.cppC:/Users/austi/dev/DarwinGalactic/test/tests/environment/AsteroidTest.cppC:/Users/austi/dev/DarwinGalactic/test/tests/environment/EnvironmentTest.cppC:/Users/austi/dev/DarwinGalactic/test/tests/environment/LaserShotTest.cppC:/Users/austi/dev/DarwinGalactic/test/tests/ship/ShipTest.cppC:/Users/austi/dev/DarwinGalactic/test/tests/ship/equipment/LaserTest.cppC:/Users/austi/dev/DarwinGalactic/test/tests/utility/IntegerMathTest.cpp
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/austi/dev/DarwinGalactic/cmake-build-debug
